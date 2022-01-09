@@ -40,3 +40,6 @@ git diff
 
 #还原文件
 git checkout -- (路径/)文件名
+
+#撤销本地暂存
+git reset HEAD (路径/)文件名
