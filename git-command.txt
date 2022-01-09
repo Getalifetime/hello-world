@@ -1,18 +1,25 @@
+#
 1. git init //初始化仓库
-
 2. git add .(文件name) //添加文件到本地仓库
-
 3. git commit -m “first commit” //添加文件描述信息
-
 4. git remote add origin + 远程仓库地址 //链接远程仓库，创建主分支
-
 5. git pull origin main // 把本地仓库的变化连接到远程仓库主分支
-
 6. git push -u origin main //把本地仓库的文件推送到远程仓库
 
+#
 git status
 git log
 
+#配置用户名和邮箱
 git config --global user.name 'XXX'
 git config --global user.email 'XXX'
 git config --global --list
+
+#删除文件
+git rm XXX.xxx
+#修改、重命名、删除文件后需要
+git add .
+git commit -m XXX
+
+#重命名文件
+git mv 旧文件名 新文件名
