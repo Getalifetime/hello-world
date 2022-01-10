@@ -77,3 +77,5 @@ git branch -d XXX
 git checkout -b XXX
 #强制删除分支，适用于已在该分支提交了内容但仍然要删除
 git branch -D XXX
+#合并XXX分支至当前分支
+git merge XXX
