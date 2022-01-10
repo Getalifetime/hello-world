@@ -80,6 +80,10 @@ git branch -D XXX
 #合并XXX分支至当前分支
 git merge XXX
 
+
 #合并代码冲突时
 #忽略其他分支，只保留当前分支的
 git merge --abort
+
+这是dev分支的修改+
+
