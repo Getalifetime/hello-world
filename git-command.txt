@@ -71,7 +71,9 @@ git branch XXX
 git branch
 #切换至分支XXX
 git checkout XXX
-#删除分支
+#删除分支，不能删除当前所在的分支
 git branch -d XXX
 #创建并切换至该分支
 git checkout -b XXX
+#强制删除分支，适用于已在该分支提交了内容但仍然要删除
+git branch -D XXX
