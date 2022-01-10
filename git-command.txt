@@ -43,3 +43,35 @@ git checkout -- (路径/)文件名
 
 #撤销本地暂存
 git reset HEAD (路径/)文件名
+
+#整个项目回退到上一个版本
+git reset --hard HEAD^
+#整个项目回退到上两个版本，依次类推
+git reset --hard HEAD^^
+
+#整个项目回退到某个指定版本
+git log 查找该版本的commit_id（也可只取前7，8位）
+git reset --hard commit_id
+
+#指定文件回退到指定版本
+git checkout commit_id -- 文件名
+
+#给最新版本添加标签
+git tag XXX
+#给指定commit添加标签
+git tag XXX commit_id
+#删除该标签
+git tag -d XXX
+#标签推送到远程仓库
+git push origin XXX
+
+#创建分支
+git branch XXX
+#查看分支
+git branch
+#切换至分支XXX
+git checkout XXX
+#删除分支
+git branch -d XXX
+#创建并切换至该分支
+git checkout -b XXX
