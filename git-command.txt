@@ -32,7 +32,7 @@ git mv 旧文件名 文件夹名/新文件名
 
 #查看文件改动
 git log --pretty=oneline (路径/)文件夹名
-git show 上命令查询出的ID
+git show commit_id（也可只取前7，8位）
 
 git log -p (路径/)文件夹名
 
@@ -86,3 +86,7 @@ git merge XXX
 git merge --abort
 #另一种方式是手动合并修改
 
+
+#查看版本路线
+git log --oneline
+git log --oneline --graph
