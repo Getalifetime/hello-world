@@ -90,3 +90,15 @@ git merge --abort
 #查看版本路线
 git log --oneline
 git log --oneline --graph
+
+#拉取远程仓库
+git fetch
+#查看远程仓库
+git branch -av
+#删除远程仓库的分支
+git push origin --delete XXX
+
+#不同的人修改不同的文件后
+git branch -av 查找文件改动，比如origin/test
+git merge origin/test
+git push
