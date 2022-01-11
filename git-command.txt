@@ -103,9 +103,15 @@ git branch -av 查找文件改动，比如origin/test
 git merge origin/test
 git push
 
+#远程克隆到本地
+git clone 远程地址 文件夹名
+
 #配置本地用户名和邮箱
 git config --add --local user.name 'XXX'
 git config --add --local user.email 'XXX'
 git config --local --list
 #创建并与远程分支关联
 git checkout -b 本地分支名 远程分支路径，如remotes/origin/master
+
+#从远程仓库更新本地分支
+git pull
